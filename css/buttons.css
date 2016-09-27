@@ -1,0 +1,31 @@
+body {
+    text-align:center;
+}
+
+.ugly, .beautiful, button {
+    width: 250px;
+}
+
+.ugly {
+    background-color: rgb(27, 99, 157);
+    border: 20px solid red;
+    border-top: 5px solid blue;
+}
+
+.beautiful {
+    background: transparent;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.beautiful:hover {
+    transform: scale(2) rotate(-45deg);
+    border: 2px solid red;
+}
+
+button > span {
+    font-size: 50px;
+}

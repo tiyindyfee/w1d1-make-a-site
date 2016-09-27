@@ -1,0 +1,53 @@
+body {
+    min-height: 1500px; /* Quick hack so you can see the background-attachment: fixed; effect. Do not use in actual code. */
+}
+
+h1 {
+    font-family: 'Baloo Bhai', serif;
+}
+
+header {
+    background: red;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+#section1 {
+    background: url(../img/mario-background.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 5px 50px 50px 50px;
+    text-align: center;
+}
+
+#section2 {
+    padding: 50px;
+    text-align: center;
+    background-color: green;
+}
+
+#section2 > button {
+    text-align: center;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    transition: all .3s ease;
+}
+
+#section2 > button:hover {
+    transform: translateX(-10px) translateY(-10px) scale(2.5);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+a, a:visited, a:active {
+    color: red;
+}
+
+#section2 > button:first-child {
+    transform: rotate(180deg);
+}
